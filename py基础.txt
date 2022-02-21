@@ -1,0 +1,20 @@
+1.is 和 ==, =和==的区别.
+    is比较的是两个对象的id值是否相等，也就是比较俩对象是否为同一个实例对象，是否指向同一个内存地址。（is比较id是否是同一个内存）
+    ==比较的是两个对象的内容是否相等，默认会调用对象的__eq__()方法
+    只有数值型和字符串型的情况下，a is b才为True，当a和b是tuple，list，dict或set型时，a is b为False。
+    只要 a 和 b 的值相等，a == b 就会返回True，而只有 id(a) 和 id(b) 相等时，a is b 才返回 True
+
+    一个等号代表的含义是赋值，将某一数值赋给某个变量，比如a=3，将3这个数值赋予给a。
+    两个等号是判断是否相等，返回True或False，比如1==1。他们是相等的，那么就返回true。1==2，他们是不相等的，那么就返回false
+    常用于条件判断语句中，比如, 例如：if (a==3):  print('你好')，else: print（'不好意思，认错人了'）.代表如果a等于3的话执行if语句后的语句。相当于数学中的等号
+
+2.None和null的区别.
+    None是一个对象，而NULL是一个类型。
+    Python中没有NULL，只有None，None有自己的特殊类型NoneType。
+    None不等于0、任何空字符串、False等。
+    在Python中，None、False、0、""(空字符串)、、()(空元组)、{}(空字典)都相当于False。
+    print(None == '') # False
+    print(None == 0) # False
+    print(type(None)) #<class 'NoneType'> 
+
+
